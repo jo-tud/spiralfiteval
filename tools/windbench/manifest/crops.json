@@ -1,0 +1,145 @@
+{
+ "version": "v1",
+ "level": 2,
+ "volume": "20251217075048",
+ "size": 512,
+ "selection": "tools/windbench/windbench/select.py",
+ "crops": [
+  {
+   "id": "c01",
+   "origin": [
+    512,
+    1536,
+    2304
+   ],
+   "why": "compressed",
+   "labels": [
+    12,
+    19
+   ],
+   "vertex_median_pitch": 12.25,
+   "wrong_side_vertices": 0.0085,
+   "seam_distance_deg": 53.0,
+   "inmask_l5": 0.768
+  },
+  {
+   "id": "c02",
+   "origin": [
+    3200,
+    1408,
+    768
+   ],
+   "why": "compressed",
+   "labels": [
+    11,
+    27
+   ],
+   "vertex_median_pitch": 12.75,
+   "wrong_side_vertices": 0.0,
+   "seam_distance_deg": 6.1,
+   "inmask_l5": 1.0
+  },
+  {
+   "id": "c03",
+   "origin": [
+    1024,
+    1408,
+    2176
+   ],
+   "why": "compressed",
+   "labels": [
+    10,
+    26
+   ],
+   "vertex_median_pitch": 13.25,
+   "wrong_side_vertices": 0.0097,
+   "seam_distance_deg": 9.3,
+   "inmask_l5": 1.0
+  },
+  {
+   "id": "c04",
+   "origin": [
+    1152,
+    1920,
+    2176
+   ],
+   "why": "typical, z band 0-1800",
+   "labels": [
+    10,
+    30
+   ],
+   "vertex_median_pitch": 22.75,
+   "wrong_side_vertices": 0.0025,
+   "seam_distance_deg": 97.9,
+   "inmask_l5": 1.0
+  },
+  {
+   "id": "c05",
+   "origin": [
+    2048,
+    1152,
+    1792
+   ],
+   "why": "typical, z band 1800-3600",
+   "labels": [
+    10,
+    30
+   ],
+   "vertex_median_pitch": 20.75,
+   "wrong_side_vertices": 0.0027,
+   "seam_distance_deg": 8.0,
+   "inmask_l5": 1.0
+  },
+  {
+   "id": "c06",
+   "origin": [
+    4224,
+    1792,
+    1920
+   ],
+   "why": "typical, z band 3600-5400",
+   "labels": [
+    10,
+    30
+   ],
+   "vertex_median_pitch": 23.25,
+   "wrong_side_vertices": 0.0,
+   "seam_distance_deg": 95.6,
+   "inmask_l5": 0.999
+  },
+  {
+   "id": "c07",
+   "origin": [
+    5504,
+    1664,
+    2176
+   ],
+   "why": "typical, z band 5400-7200",
+   "labels": [
+    10,
+    30
+   ],
+   "vertex_median_pitch": 19.75,
+   "wrong_side_vertices": 0.0,
+   "seam_distance_deg": 54.7,
+   "inmask_l5": 1.0
+  },
+  {
+   "id": "c08",
+   "origin": [
+    7552,
+    1920,
+    2304
+   ],
+   "why": "typical, z band 7200-9300",
+   "labels": [
+    10,
+    30
+   ],
+   "vertex_median_pitch": 25.25,
+   "wrong_side_vertices": 0.0,
+   "seam_distance_deg": 93.1,
+   "inmask_l5": 1.0
+  }
+ ]
+}

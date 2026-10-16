@@ -1,0 +1,212 @@
+[
+ {
+  "origin": [
+   3328,
+   1280,
+   768
+  ],
+  "id": null,
+  "kept": false,
+  "coverage": 0.45634144612018807,
+  "median_voxel_pitch": 17.052284240722656,
+  "voxel_pitch_proxy": 16.75,
+  "vertex_median_pitch": 12.75,
+  "wrong_side_vertices": 0.0,
+  "chunk_occupancy": 0.5625,
+  "seam_distance_deg": 5.3,
+  "labels": [
+   11,
+   28
+  ],
+  "seconds": 227.9
+ },
+ {
+  "origin": [
+   768,
+   1408,
+   2176
+  ],
+  "id": null,
+  "kept": false,
+  "coverage": 0.3046014371025687,
+  "median_voxel_pitch": 16.0,
+  "voxel_pitch_proxy": 17.75,
+  "vertex_median_pitch": 12.25,
+  "wrong_side_vertices": 0.0029,
+  "chunk_occupancy": 0.53125,
+  "seam_distance_deg": 9.3,
+  "labels": [
+   10,
+   25
+  ],
+  "seconds": 392.4
+ },
+ {
+  "origin": [
+   3072,
+   1280,
+   768
+  ],
+  "id": null,
+  "kept": false,
+  "coverage": 0.47410957705687856,
+  "median_voxel_pitch": 17.385164260864258,
+  "voxel_pitch_proxy": 17.75,
+  "vertex_median_pitch": 13.75,
+  "wrong_side_vertices": 0.0,
+  "chunk_occupancy": 0.625,
+  "seam_distance_deg": 5.3,
+  "labels": [
+   11,
+   28
+  ],
+  "seconds": 377.8
+ },
+ {
+  "origin": [
+   3328,
+   1408,
+   768
+  ],
+  "id": null,
+  "kept": false,
+  "coverage": 0.44332839227892556,
+  "median_voxel_pitch": 18.099668502807617,
+  "voxel_pitch_proxy": 17.75,
+  "vertex_median_pitch": 13.25,
+  "wrong_side_vertices": 0.0,
+  "chunk_occupancy": 0.5625,
+  "seam_distance_deg": 7.3,
+  "labels": [
+   11,
+   26
+  ],
+  "seconds": 349.1
+ },
+ {
+  "origin": [
+   640,
+   1408,
+   2304
+  ],
+  "id": null,
+  "kept": false,
+  "coverage": 0.2882549171565818,
+  "median_voxel_pitch": 16.30933380126953,
+  "voxel_pitch_proxy": 18.25,
+  "vertex_median_pitch": 12.75,
+  "wrong_side_vertices": 0.0063,
+  "chunk_occupancy": 0.546875,
+  "seam_distance_deg": 25.3,
+  "labels": [
+   10,
+   26
+  ],
+  "seconds": 632.1
+ },
+ {
+  "origin": [
+   2944,
+   1408,
+   768
+  ],
+  "id": null,
+  "kept": false,
+  "coverage": 0.4719457269052157,
+  "median_voxel_pitch": 17.85822105407715,
+  "voxel_pitch_proxy": 18.25,
+  "vertex_median_pitch": 13.25,
+  "wrong_side_vertices": 0.0,
+  "chunk_occupancy": 0.625,
+  "seam_distance_deg": 6.1,
+  "labels": [
+   11,
+   27
+  ],
+  "seconds": 393.9
+ },
+ {
+  "origin": [
+   3072,
+   1408,
+   768
+  ],
+  "id": null,
+  "kept": false,
+  "coverage": 0.46174594596970725,
+  "median_voxel_pitch": 17.844112396240234,
+  "voxel_pitch_proxy": 18.25,
+  "vertex_median_pitch": 13.75,
+  "wrong_side_vertices": 0.0,
+  "chunk_occupancy": 0.609375,
+  "seam_distance_deg": 7.3,
+  "labels": [
+   11,
+   27
+  ],
+  "seconds": 318.3
+ },
+ {
+  "origin": [
+   3200,
+   1408,
+   768
+  ],
+  "id": null,
+  "kept": false,
+  "coverage": 0.4429546537623342,
+  "median_voxel_pitch": 18.0,
+  "voxel_pitch_proxy": 18.25,
+  "vertex_median_pitch": 12.75,
+  "wrong_side_vertices": 0.0,
+  "chunk_occupancy": 0.578125,
+  "seam_distance_deg": 6.1,
+  "labels": [
+   11,
+   27
+  ],
+  "seconds": 339.3
+ },
+ {
+  "origin": [
+   640,
+   1280,
+   2304
+  ],
+  "id": null,
+  "kept": false,
+  "coverage": 0.42007479830779937,
+  "median_voxel_pitch": 16.771989822387695,
+  "voxel_pitch_proxy": 18.75,
+  "vertex_median_pitch": 12.75,
+  "wrong_side_vertices": 0.0102,
+  "chunk_occupancy": 0.71875,
+  "seam_distance_deg": 19.2,
+  "labels": [
+   10,
+   26
+  ],
+  "seconds": 456.0
+ },
+ {
+  "origin": [
+   2816,
+   1280,
+   768
+  ],
+  "id": null,
+  "kept": false,
+  "coverage": 0.5242711816303776,
+  "median_voxel_pitch": 18.36614990234375,
+  "voxel_pitch_proxy": 18.75,
+  "vertex_median_pitch": 14.25,
+  "wrong_side_vertices": 0.0,
+  "chunk_occupancy": 0.71875,
+  "seam_distance_deg": 5.6,
+  "labels": [
+   11,
+   29
+  ],
+  "seconds": 470.0
+ }
+]

@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "spiralfiteval"
+version = "0.1.0"
+description = "Score any spiral-fit output (per-winding tifxyz meshes): winding identity, sheet switches, distance to reference surfaces, sheet spacing, conformity away from inputs."
+requires-python = ">=3.12"
+license = { text = "MIT" }
+dependencies = ["numpy>=2.0,<3", "scipy>=1.13,<2", "tifffile>=2024.1"]
+
+# exact tested versions: constraints.txt
+[project.optional-dependencies]
+plot = ["matplotlib>=3.8,<4"]
+tests = ["pytest>=8,<10"]
+
+[project.scripts]
+spiralfiteval = "spiralfiteval.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

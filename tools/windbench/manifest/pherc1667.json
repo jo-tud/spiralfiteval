@@ -1,0 +1,161 @@
+{
+ "scroll": "PHerc1667",
+ "bucket": "s3://vesuvius-challenge-open-data",
+ "licence": "CC BY-NC 4.0 (scan data and derived meshes)",
+ "volume": {
+  "id": "20251217075048",
+  "path": "PHerc1667/volumes/20251217075048-2.399um-0.2m-78keV-masked.zarr/",
+  "pixel_size_um": 2.399,
+  "level": 2,
+  "level_pixel_size_um": 9.596,
+  "shape_level0_zyx": [
+   37076,
+   15229,
+   15229
+  ]
+ },
+ "lasagna": {
+  "model_id": "20260419180421",
+  "run": "20260724",
+  "base": "PHerc1667/representations/predictions/lasagna/20251217075048-lasagna-20260419180421-L2/",
+  "arrays": {
+   "cos": "PHerc1667-20251217075048-lasagna-20260724_cos.ome.zarr/3",
+   "grad_mag": "PHerc1667-20251217075048-lasagna-20260724_grad_mag.ome.zarr/4",
+   "nx": "PHerc1667-20251217075048-lasagna-20260724_nx.ome.zarr/4",
+   "ny": "PHerc1667-20251217075048-lasagna-20260724_ny.ome.zarr/4"
+  },
+  "levels": {
+   "cos": 3,
+   "grad_mag": 4,
+   "nx": 4,
+   "ny": 4
+  },
+  "encoding": {
+   "cos": "u8/255 = 0.5+0.5*cos(2*pi*w)",
+   "grad_mag": "u8/1000 = |grad w| in wraps per level-0 voxel",
+   "nxny": "(u8-128)/127, nz=+sqrt(1-nx^2-ny^2), sign-ambiguous"
+  }
+ },
+ "excluded": [
+  {
+   "long_id": "20260612121456-w011_20260108140509268_merged_v4_flatboi_straightened_v4",
+   "reason": "merged multi-wrap mesh, no per-wrap index"
+  }
+ ],
+ "segments": [
+  {
+   "wrap": 11,
+   "segment_id": "20260108140509",
+   "long_id": "20260108140509-w011_20260108140509268_flatboi",
+   "tifxyz": "PHerc1667/segments/20260108140509-w011_20260108140509268_flatboi/mesh/20260108140509-on-20251217075048-2.399um.tifxyz/"
+  },
+  {
+   "wrap": 12,
+   "segment_id": "20251206103305",
+   "long_id": "20251206103305-w012_20251206103305555_flatboi",
+   "tifxyz": "PHerc1667/segments/20251206103305-w012_20251206103305555_flatboi/mesh/20251206103305-on-20251217075048-2.399um.tifxyz/"
+  },
+  {
+   "wrap": 13,
+   "segment_id": "20240304141531",
+   "long_id": "20240304141531-w013_20240304141531_flatboi",
+   "tifxyz": "PHerc1667/segments/20240304141531-w013_20240304141531_flatboi/mesh/20240304141531-on-20251217075048-2.399um.tifxyz/"
+  },
+  {
+   "wrap": 18,
+   "segment_id": "20240304144031",
+   "long_id": "20240304144031-w018_20240304144031_flatboi",
+   "tifxyz": "PHerc1667/segments/20240304144031-w018_20240304144031_flatboi/mesh/20240304144031-on-20251217075048-2.399um.tifxyz/"
+  },
+  {
+   "wrap": 23,
+   "segment_id": "20240304161941",
+   "long_id": "20240304161941-w023_20240304161941_flatboi",
+   "tifxyz": "PHerc1667/segments/20240304161941-w023_20240304161941_flatboi/mesh/20240304161941-on-20251217075048-2.399um.tifxyz/"
+  },
+  {
+   "wrap": 28,
+   "segment_id": "20251208130119",
+   "long_id": "20251208130119-w028_20251208130119156_flatboi",
+   "tifxyz": "PHerc1667/segments/20251208130119-w028_20251208130119156_flatboi/mesh/20251208130119-on-20251217075048-2.399um.tifxyz/"
+  },
+  {
+   "wrap": 29,
+   "segment_id": "20251212185248",
+   "long_id": "20251212185248-w029_20251212185248662_flatboi",
+   "tifxyz": "PHerc1667/segments/20251212185248-w029_20251212185248662_flatboi/mesh/20251212185248-on-20251217075048-2.399um.tifxyz/"
+  },
+  {
+   "wrap": 30,
+   "segment_id": "20251220020000",
+   "long_id": "20251220020000-w030_2025122002_flatboi",
+   "tifxyz": "PHerc1667/segments/20251220020000-w030_2025122002_flatboi/mesh/20251220020000-on-20251217075048-2.399um.tifxyz/"
+  },
+  {
+   "wrap": 31,
+   "segment_id": "20251223230000",
+   "long_id": "20251223230000-w031_2025122323_flatboi",
+   "tifxyz": "PHerc1667/segments/20251223230000-w031_2025122323_flatboi/mesh/20251223230000-on-20251217075048-2.399um.tifxyz/"
+  },
+  {
+   "wrap": 32,
+   "segment_id": "20260105050000",
+   "long_id": "20260105050000-w032_2026010505_flatboi",
+   "tifxyz": "PHerc1667/segments/20260105050000-w032_2026010505_flatboi/mesh/20260105050000-on-20251217075048-2.399um.tifxyz/"
+  },
+  {
+   "wrap": 33,
+   "segment_id": "20260110010000",
+   "long_id": "20260110010000-w033_2026011001_flatboi",
+   "tifxyz": "PHerc1667/segments/20260110010000-w033_2026011001_flatboi/mesh/20260110010000-on-20251217075048-2.399um.tifxyz/"
+  },
+  {
+   "wrap": 34,
+   "segment_id": "20260115160000",
+   "long_id": "20260115160000-w034_2026011516_flatboi",
+   "tifxyz": "PHerc1667/segments/20260115160000-w034_2026011516_flatboi/mesh/20260115160000-on-20251217075048-2.399um.tifxyz/"
+  },
+  {
+   "wrap": 35,
+   "segment_id": "20260116230000",
+   "long_id": "20260116230000-w035_2026011623_flatboi",
+   "tifxyz": "PHerc1667/segments/20260116230000-w035_2026011623_flatboi/mesh/20260116230000-on-20251217075048-2.399um.tifxyz/"
+  },
+  {
+   "wrap": 36,
+   "segment_id": "20260119120000",
+   "long_id": "20260119120000-w036_2026011912_flatboi",
+   "tifxyz": "PHerc1667/segments/20260119120000-w036_2026011912_flatboi/mesh/20260119120000-on-20251217075048-2.399um.tifxyz/"
+  },
+  {
+   "wrap": 37,
+   "segment_id": "20260123230000",
+   "long_id": "20260123230000-w037_2026012323_flatboi",
+   "tifxyz": "PHerc1667/segments/20260123230000-w037_2026012323_flatboi/mesh/20260123230000-on-20251217075048-2.399um.tifxyz/"
+  },
+  {
+   "wrap": 38,
+   "segment_id": "20260128140000",
+   "long_id": "20260128140000-w038_2026012814_flatboi",
+   "tifxyz": "PHerc1667/segments/20260128140000-w038_2026012814_flatboi/mesh/20260128140000-on-20251217075048-2.399um.tifxyz/"
+  },
+  {
+   "wrap": 39,
+   "segment_id": "20260130150000",
+   "long_id": "20260130150000-w039_2026013015_flatboi",
+   "tifxyz": "PHerc1667/segments/20260130150000-w039_2026013015_flatboi/mesh/20260130150000-on-20251217075048-2.399um.tifxyz/"
+  },
+  {
+   "wrap": 40,
+   "segment_id": "20260203210000",
+   "long_id": "20260203210000-w040_2026020321_flatboi",
+   "tifxyz": "PHerc1667/segments/20260203210000-w040_2026020321_flatboi/mesh/20260203210000-on-20251217075048-2.399um.tifxyz/"
+  },
+  {
+   "wrap": 41,
+   "segment_id": "20260205070000",
+   "long_id": "20260205070000-w041_2026020507_flatboi",
+   "tifxyz": "PHerc1667/segments/20260205070000-w041_2026020507_flatboi/mesh/20260205070000-on-20251217075048-2.399um.tifxyz/"
+  }
+ ]
+}

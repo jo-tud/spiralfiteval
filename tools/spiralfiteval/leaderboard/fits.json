@@ -1,0 +1,675 @@
+{
+ "_comment": "Registry of published spiral fits scored by the leaderboard. One command per row: tools/spiralfiteval/leaderboard/add_row.sh --id <id>. Fits are downloaded from their authors' public URLs, never copied into this repository.",
+ "fits": [
+  {
+   "id": "jashann-paris4-A2",
+   "author": "Jashann",
+   "author_url": "https://github.com/Jashann/vesuvius-scrolling",
+   "release": "vesuvius-scrolling v1.1 (2026-09-29)",
+   "scroll": "PHerc. Paris 4",
+   "frame": "level 2 of scan 20260411134726 (9.6 um voxels)",
+   "fitter": "organisers' fit_spiral.py (villa 6bbe6e2), 12k steps",
+   "run": "A2",
+   "band_z": [
+    8400,
+    9400
+   ],
+   "fit_inputs": "tracks, Lasagna, umbilicus, outer shell only; no human annotations",
+   "held_out_H1": true,
+   "published_slips_per_wrap": 0.203,
+   "published_slips_ci95": [
+    0.17,
+    0.249
+   ],
+   "format": "npz grids (one wNNN key per winding)",
+   "source": {
+    "kind": "curl",
+    "url": "https://github.com/Jashann/vesuvius-scrolling/releases/download/v1.1/grids_Paris4_A2.npz"
+   },
+   "local": "data/spiralfits/jashann_v1.1/grids_Paris4_A2.npz",
+   "score_args": [
+    "--references",
+    "PHercParis4",
+    "--z",
+    "8400",
+    "9400",
+    "--floors",
+    "5"
+   ]
+  },
+  {
+   "id": "jashann-paris4-A2_seed2",
+   "author": "Jashann",
+   "author_url": "https://github.com/Jashann/vesuvius-scrolling",
+   "release": "vesuvius-scrolling v1.1 (2026-09-29)",
+   "scroll": "PHerc. Paris 4",
+   "frame": "level 2 of scan 20260411134726 (9.6 um voxels)",
+   "fitter": "organisers' fit_spiral.py (villa 6bbe6e2), 12k steps",
+   "run": "A2_seed2",
+   "band_z": [
+    8400,
+    9400
+   ],
+   "fit_inputs": "tracks, Lasagna, umbilicus, outer shell only; no human annotations",
+   "held_out_H1": true,
+   "published_slips_per_wrap": 0.221,
+   "published_slips_ci95": [
+    0.183,
+    0.276
+   ],
+   "format": "npz grids (one wNNN key per winding)",
+   "source": {
+    "kind": "curl",
+    "url": "https://github.com/Jashann/vesuvius-scrolling/releases/download/v1.1/grids_Paris4_A2_seed2.npz"
+   },
+   "local": "data/spiralfits/jashann_v1.1/grids_Paris4_A2_seed2.npz",
+   "score_args": [
+    "--references",
+    "PHercParis4",
+    "--z",
+    "8400",
+    "9400",
+    "--floors",
+    "5"
+   ]
+  },
+  {
+   "id": "jashann-paris4-B3w10",
+   "author": "Jashann",
+   "author_url": "https://github.com/Jashann/vesuvius-scrolling",
+   "release": "vesuvius-scrolling v1.1 (2026-09-29)",
+   "scroll": "PHerc. Paris 4",
+   "frame": "level 2 of scan 20260411134726 (9.6 um voxels)",
+   "fitter": "organisers' fit_spiral.py (villa 6bbe6e2), 12k steps",
+   "run": "B3w10",
+   "band_z": [
+    8400,
+    9400
+   ],
+   "fit_inputs": "the A2 inputs plus the author's machine-generated relative windings (PCU)",
+   "held_out_H1": true,
+   "published_slips_per_wrap": 0.093,
+   "published_slips_ci95": [
+    0.062,
+    0.127
+   ],
+   "format": "npz grids (one wNNN key per winding)",
+   "source": {
+    "kind": "curl",
+    "url": "https://github.com/Jashann/vesuvius-scrolling/releases/download/v1.1/grids_Paris4_B3w10.npz"
+   },
+   "local": "data/spiralfits/jashann_v1.1/grids_Paris4_B3w10.npz",
+   "score_args": [
+    "--references",
+    "PHercParis4",
+    "--z",
+    "8400",
+    "9400",
+    "--floors",
+    "5"
+   ]
+  },
+  {
+   "id": "jashann-paris4-B3w10_seed2",
+   "author": "Jashann",
+   "author_url": "https://github.com/Jashann/vesuvius-scrolling",
+   "release": "vesuvius-scrolling v1.1 (2026-09-29)",
+   "scroll": "PHerc. Paris 4",
+   "frame": "level 2 of scan 20260411134726 (9.6 um voxels)",
+   "fitter": "organisers' fit_spiral.py (villa 6bbe6e2), 12k steps",
+   "run": "B3w10_seed2",
+   "band_z": [
+    8400,
+    9400
+   ],
+   "fit_inputs": "the A2 inputs plus the author's machine-generated relative windings (PCU)",
+   "held_out_H1": true,
+   "published_slips_per_wrap": 0.088,
+   "published_slips_ci95": [
+    0.057,
+    0.124
+   ],
+   "format": "npz grids (one wNNN key per winding)",
+   "source": {
+    "kind": "curl",
+    "url": "https://github.com/Jashann/vesuvius-scrolling/releases/download/v1.1/grids_Paris4_B3w10_seed2.npz"
+   },
+   "local": "data/spiralfits/jashann_v1.1/grids_Paris4_B3w10_seed2.npz",
+   "score_args": [
+    "--references",
+    "PHercParis4",
+    "--z",
+    "8400",
+    "9400",
+    "--floors",
+    "5"
+   ]
+  },
+  {
+   "id": "jashann-paris4-A",
+   "author": "Jashann",
+   "author_url": "https://github.com/Jashann/vesuvius-scrolling",
+   "release": "vesuvius-scrolling v1.1 (2026-09-29)",
+   "scroll": "PHerc. Paris 4",
+   "frame": "level 2 of scan 20260411134726 (9.6 um voxels)",
+   "fitter": "organisers' fit_spiral.py (villa 6bbe6e2), 12k steps",
+   "run": "A",
+   "band_z": [
+    8400,
+    9400
+   ],
+   "fit_inputs": "the A2 inputs plus verified patches",
+   "held_out_H1": true,
+   "published_slips_per_wrap": 0.159,
+   "published_slips_ci95": [
+    0.104,
+    0.214
+   ],
+   "format": "npz grids (one wNNN key per winding)",
+   "source": {
+    "kind": "curl",
+    "url": "https://github.com/Jashann/vesuvius-scrolling/releases/download/v1.1/grids_Paris4_A.npz"
+   },
+   "local": "data/spiralfits/jashann_v1.1/grids_Paris4_A.npz",
+   "score_args": [
+    "--references",
+    "PHercParis4",
+    "--z",
+    "8400",
+    "9400",
+    "--floors",
+    "5"
+   ]
+  },
+  {
+   "id": "jashann-paris4-B",
+   "author": "Jashann",
+   "author_url": "https://github.com/Jashann/vesuvius-scrolling",
+   "release": "vesuvius-scrolling v1.1 (2026-09-29)",
+   "scroll": "PHerc. Paris 4",
+   "frame": "level 2 of scan 20260411134726 (9.6 um voxels)",
+   "fitter": "organisers' fit_spiral.py (villa 6bbe6e2), 12k steps",
+   "run": "B",
+   "band_z": [
+    8400,
+    9400
+   ],
+   "fit_inputs": "verified patches plus the author's machine-generated relative windings (PCU)",
+   "held_out_H1": true,
+   "published_slips_per_wrap": 0.156,
+   "published_slips_ci95": [
+    0.085,
+    0.225
+   ],
+   "format": "npz grids (one wNNN key per winding)",
+   "source": {
+    "kind": "curl",
+    "url": "https://github.com/Jashann/vesuvius-scrolling/releases/download/v1.1/grids_Paris4_B.npz"
+   },
+   "local": "data/spiralfits/jashann_v1.1/grids_Paris4_B.npz",
+   "score_args": [
+    "--references",
+    "PHercParis4",
+    "--z",
+    "8400",
+    "9400",
+    "--floors",
+    "5"
+   ]
+  },
+  {
+   "id": "jashann-paris4-C",
+   "author": "Jashann",
+   "author_url": "https://github.com/Jashann/vesuvius-scrolling",
+   "release": "vesuvius-scrolling v1.1 (2026-09-29)",
+   "scroll": "PHerc. Paris 4",
+   "frame": "level 2 of scan 20260411134726 (9.6 um voxels)",
+   "fitter": "organisers' fit_spiral.py (villa 6bbe6e2), 12k steps",
+   "run": "C",
+   "band_z": [
+    8400,
+    9400
+   ],
+   "fit_inputs": "verified patches plus the organisers' human winding annotations (NOT held out)",
+   "held_out_H1": false,
+   "published_slips_per_wrap": 0.03,
+   "published_slips_ci95": [
+    0.007,
+    0.056
+   ],
+   "format": "npz grids (one wNNN key per winding)",
+   "source": {
+    "kind": "curl",
+    "url": "https://github.com/Jashann/vesuvius-scrolling/releases/download/v1.1/grids_Paris4_C.npz"
+   },
+   "local": "data/spiralfits/jashann_v1.1/grids_Paris4_C.npz",
+   "score_args": [
+    "--references",
+    "PHercParis4",
+    "--z",
+    "8400",
+    "9400",
+    "--floors",
+    "5"
+   ]
+  },
+  {
+   "id": "jashann-paris4-B2",
+   "author": "Jashann",
+   "author_url": "https://github.com/Jashann/vesuvius-scrolling",
+   "release": "vesuvius-scrolling v1.1 (2026-09-29)",
+   "scroll": "PHerc. Paris 4",
+   "frame": "level 2 of scan 20260411134726 (9.6 um voxels)",
+   "fitter": "organisers' fit_spiral.py (villa 6bbe6e2), 12k steps",
+   "run": "B2",
+   "band_z": [
+    8400,
+    9400
+   ],
+   "fit_inputs": "the A2 inputs plus the author's machine-generated relative windings (PCU)",
+   "held_out_H1": true,
+   "published_slips_per_wrap": null,
+   "published_slips_ci95": null,
+   "format": "npz grids (one wNNN key per winding)",
+   "source": {
+    "kind": "curl",
+    "url": "https://github.com/Jashann/vesuvius-scrolling/releases/download/v1.1/grids_Paris4_B2.npz"
+   },
+   "local": "data/spiralfits/jashann_v1.1/grids_Paris4_B2.npz",
+   "score_args": [
+    "--references",
+    "PHercParis4",
+    "--z",
+    "8400",
+    "9400",
+    "--floors",
+    "5"
+   ]
+  },
+  {
+   "id": "jashann-paris4-B3w40",
+   "author": "Jashann",
+   "author_url": "https://github.com/Jashann/vesuvius-scrolling",
+   "release": "vesuvius-scrolling v1.1 (2026-09-29)",
+   "scroll": "PHerc. Paris 4",
+   "frame": "level 2 of scan 20260411134726 (9.6 um voxels)",
+   "fitter": "organisers' fit_spiral.py (villa 6bbe6e2), 12k steps",
+   "run": "B3w40",
+   "band_z": [
+    8400,
+    9400
+   ],
+   "fit_inputs": "the A2 inputs plus the author's machine-generated relative windings (PCU)",
+   "held_out_H1": true,
+   "published_slips_per_wrap": null,
+   "published_slips_ci95": null,
+   "format": "npz grids (one wNNN key per winding)",
+   "source": {
+    "kind": "curl",
+    "url": "https://github.com/Jashann/vesuvius-scrolling/releases/download/v1.1/grids_Paris4_B3w40.npz"
+   },
+   "local": "data/spiralfits/jashann_v1.1/grids_Paris4_B3w40.npz",
+   "score_args": [
+    "--references",
+    "PHercParis4",
+    "--z",
+    "8400",
+    "9400",
+    "--floors",
+    "5"
+   ]
+  },
+  {
+   "id": "jashann-paris4-B4w4",
+   "author": "Jashann",
+   "author_url": "https://github.com/Jashann/vesuvius-scrolling",
+   "release": "vesuvius-scrolling v1.1 (2026-09-29)",
+   "scroll": "PHerc. Paris 4",
+   "frame": "level 2 of scan 20260411134726 (9.6 um voxels)",
+   "fitter": "organisers' fit_spiral.py (villa 6bbe6e2), 12k steps",
+   "run": "B4w4",
+   "band_z": [
+    8400,
+    9400
+   ],
+   "fit_inputs": "the A2 inputs plus the author's machine-generated relative windings (PCU)",
+   "held_out_H1": true,
+   "published_slips_per_wrap": null,
+   "published_slips_ci95": null,
+   "format": "npz grids (one wNNN key per winding)",
+   "source": {
+    "kind": "curl",
+    "url": "https://github.com/Jashann/vesuvius-scrolling/releases/download/v1.1/grids_Paris4_B4w4.npz"
+   },
+   "local": "data/spiralfits/jashann_v1.1/grids_Paris4_B4w4.npz",
+   "score_args": [
+    "--references",
+    "PHercParis4",
+    "--z",
+    "8400",
+    "9400",
+    "--floors",
+    "5"
+   ]
+  },
+  {
+   "id": "jashann-paris4-B4w20",
+   "author": "Jashann",
+   "author_url": "https://github.com/Jashann/vesuvius-scrolling",
+   "release": "vesuvius-scrolling v1.1 (2026-09-29)",
+   "scroll": "PHerc. Paris 4",
+   "frame": "level 2 of scan 20260411134726 (9.6 um voxels)",
+   "fitter": "organisers' fit_spiral.py (villa 6bbe6e2), 12k steps",
+   "run": "B4w20",
+   "band_z": [
+    8400,
+    9400
+   ],
+   "fit_inputs": "the A2 inputs plus the author's machine-generated relative windings (PCU)",
+   "held_out_H1": true,
+   "published_slips_per_wrap": null,
+   "published_slips_ci95": null,
+   "format": "npz grids (one wNNN key per winding)",
+   "source": {
+    "kind": "curl",
+    "url": "https://github.com/Jashann/vesuvius-scrolling/releases/download/v1.1/grids_Paris4_B4w20.npz"
+   },
+   "local": "data/spiralfits/jashann_v1.1/grids_Paris4_B4w20.npz",
+   "score_args": [
+    "--references",
+    "PHercParis4",
+    "--z",
+    "8400",
+    "9400",
+    "--floors",
+    "5"
+   ]
+  },
+  {
+   "id": "jashann-paris4-A2_z11000",
+   "author": "Jashann",
+   "author_url": "https://github.com/Jashann/vesuvius-scrolling",
+   "release": "vesuvius-scrolling v1.1 (2026-09-29)",
+   "scroll": "PHerc. Paris 4",
+   "frame": "level 2 of scan 20260411134726 (9.6 um voxels)",
+   "fitter": "organisers' fit_spiral.py (villa 6bbe6e2), 12k steps",
+   "run": "A2_z11000",
+   "band_z": [
+    11000,
+    12000
+   ],
+   "fit_inputs": "tracks, Lasagna, umbilicus, outer shell only; no human annotations",
+   "held_out_H1": true,
+   "published_slips_per_wrap": 0.306,
+   "published_slips_ci95": [
+    0.247,
+    0.371
+   ],
+   "format": "npz grids (one wNNN key per winding)",
+   "source": {
+    "kind": "curl",
+    "url": "https://github.com/Jashann/vesuvius-scrolling/releases/download/v1.1/grids_Paris4_A2_z11000.npz"
+   },
+   "local": "data/spiralfits/jashann_v1.1/grids_Paris4_A2_z11000.npz",
+   "score_args": [
+    "--references",
+    "PHercParis4",
+    "--z",
+    "11000",
+    "12000",
+    "--floors",
+    "5"
+   ]
+  },
+  {
+   "id": "jashann-paris4-B3w10_z11000",
+   "author": "Jashann",
+   "author_url": "https://github.com/Jashann/vesuvius-scrolling",
+   "release": "vesuvius-scrolling v1.1 (2026-09-29)",
+   "scroll": "PHerc. Paris 4",
+   "frame": "level 2 of scan 20260411134726 (9.6 um voxels)",
+   "fitter": "organisers' fit_spiral.py (villa 6bbe6e2), 12k steps",
+   "run": "B3w10_z11000",
+   "band_z": [
+    11000,
+    12000
+   ],
+   "fit_inputs": "the A2 inputs plus the author's machine-generated relative windings (PCU)",
+   "held_out_H1": true,
+   "published_slips_per_wrap": 0.286,
+   "published_slips_ci95": [
+    0.198,
+    0.379
+   ],
+   "format": "npz grids (one wNNN key per winding)",
+   "source": {
+    "kind": "curl",
+    "url": "https://github.com/Jashann/vesuvius-scrolling/releases/download/v1.1/grids_Paris4_B3w10_z11000.npz"
+   },
+   "local": "data/spiralfits/jashann_v1.1/grids_Paris4_B3w10_z11000.npz",
+   "score_args": [
+    "--references",
+    "PHercParis4",
+    "--z",
+    "11000",
+    "12000",
+    "--floors",
+    "5"
+   ]
+  },
+  {
+   "id": "jashann-pherc0826-A0",
+   "author": "Jashann",
+   "author_url": "https://github.com/Jashann/vesuvius-scrolling",
+   "release": "vesuvius-scrolling v1.1 (2026-09-29)",
+   "scroll": "PHerc. 0826",
+   "frame": "spiral-input level-2 voxels",
+   "fitter": "organisers' fit_spiral.py (villa 6bbe6e2), 12k steps",
+   "run": "A0",
+   "band_z": [
+    8500,
+    9500
+   ],
+   "fit_inputs": "as published; see the author's report",
+   "held_out_H1": null,
+   "published_slips_per_wrap": null,
+   "published_slips_ci95": null,
+   "format": "npz grids (one wNNN key per winding)",
+   "source": {
+    "kind": "curl",
+    "url": "https://github.com/Jashann/vesuvius-scrolling/releases/download/v1.1/grids_PHerc0826_A0.npz"
+   },
+   "local": "data/spiralfits/jashann_v1.1/grids_PHerc0826_A0.npz",
+   "score_args": [],
+   "note": "no public winding references for this scroll: H5 only"
+  },
+  {
+   "id": "jashann-pherc0826-B0",
+   "author": "Jashann",
+   "author_url": "https://github.com/Jashann/vesuvius-scrolling",
+   "release": "vesuvius-scrolling v1.1 (2026-09-29)",
+   "scroll": "PHerc. 0826",
+   "frame": "spiral-input level-2 voxels",
+   "fitter": "organisers' fit_spiral.py (villa 6bbe6e2), 12k steps",
+   "run": "B0",
+   "band_z": [
+    8500,
+    9500
+   ],
+   "fit_inputs": "as published; see the author's report",
+   "held_out_H1": null,
+   "published_slips_per_wrap": null,
+   "published_slips_ci95": null,
+   "format": "npz grids (one wNNN key per winding)",
+   "source": {
+    "kind": "curl",
+    "url": "https://github.com/Jashann/vesuvius-scrolling/releases/download/v1.1/grids_PHerc0826_B0.npz"
+   },
+   "local": "data/spiralfits/jashann_v1.1/grids_PHerc0826_B0.npz",
+   "score_args": [],
+   "note": "no public winding references for this scroll: H5 only"
+  },
+  {
+   "id": "jashann-pherc0826-B1w10",
+   "author": "Jashann",
+   "author_url": "https://github.com/Jashann/vesuvius-scrolling",
+   "release": "vesuvius-scrolling v1.1 (2026-09-29)",
+   "scroll": "PHerc. 0826",
+   "frame": "spiral-input level-2 voxels",
+   "fitter": "organisers' fit_spiral.py (villa 6bbe6e2), 12k steps",
+   "run": "B1w10",
+   "band_z": [
+    8500,
+    9500
+   ],
+   "fit_inputs": "as published; see the author's report",
+   "held_out_H1": null,
+   "published_slips_per_wrap": null,
+   "published_slips_ci95": null,
+   "format": "npz grids (one wNNN key per winding)",
+   "source": {
+    "kind": "curl",
+    "url": "https://github.com/Jashann/vesuvius-scrolling/releases/download/v1.1/grids_PHerc0826_B1w10.npz"
+   },
+   "local": "data/spiralfits/jashann_v1.1/grids_PHerc0826_B1w10.npz",
+   "score_args": [],
+   "note": "no public winding references for this scroll: H5 only"
+  },
+  {
+   "id": "jashann-pherc0826-B1w20",
+   "author": "Jashann",
+   "author_url": "https://github.com/Jashann/vesuvius-scrolling",
+   "release": "vesuvius-scrolling v1.1 (2026-09-29)",
+   "scroll": "PHerc. 0826",
+   "frame": "spiral-input level-2 voxels",
+   "fitter": "organisers' fit_spiral.py (villa 6bbe6e2), 12k steps",
+   "run": "B1w20",
+   "band_z": [
+    8500,
+    9500
+   ],
+   "fit_inputs": "as published; see the author's report",
+   "held_out_H1": null,
+   "published_slips_per_wrap": null,
+   "published_slips_ci95": null,
+   "format": "npz grids (one wNNN key per winding)",
+   "source": {
+    "kind": "curl",
+    "url": "https://github.com/Jashann/vesuvius-scrolling/releases/download/v1.1/grids_PHerc0826_B1w20.npz"
+   },
+   "local": "data/spiralfits/jashann_v1.1/grids_PHerc0826_B1w20.npz",
+   "score_args": [],
+   "note": "no public winding references for this scroll: H5 only"
+  },
+  {
+   "id": "jashann-pherc0826-C0",
+   "author": "Jashann",
+   "author_url": "https://github.com/Jashann/vesuvius-scrolling",
+   "release": "vesuvius-scrolling v1.1 (2026-09-29)",
+   "scroll": "PHerc. 0826",
+   "frame": "spiral-input level-2 voxels",
+   "fitter": "organisers' fit_spiral.py (villa 6bbe6e2), 12k steps",
+   "run": "C0",
+   "band_z": [
+    8500,
+    9500
+   ],
+   "fit_inputs": "as published; see the author's report",
+   "held_out_H1": null,
+   "published_slips_per_wrap": null,
+   "published_slips_ci95": null,
+   "format": "npz grids (one wNNN key per winding)",
+   "source": {
+    "kind": "curl",
+    "url": "https://github.com/Jashann/vesuvius-scrolling/releases/download/v1.1/grids_PHerc0826_C0.npz"
+   },
+   "local": "data/spiralfits/jashann_v1.1/grids_PHerc0826_C0.npz",
+   "score_args": [],
+   "note": "no public winding references for this scroll: H5 only"
+  },
+  {
+   "id": "jashann-pherc0826-C1",
+   "author": "Jashann",
+   "author_url": "https://github.com/Jashann/vesuvius-scrolling",
+   "release": "vesuvius-scrolling v1.1 (2026-09-29)",
+   "scroll": "PHerc. 0826",
+   "frame": "spiral-input level-2 voxels",
+   "fitter": "organisers' fit_spiral.py (villa 6bbe6e2), 12k steps",
+   "run": "C1",
+   "band_z": [
+    8500,
+    9500
+   ],
+   "fit_inputs": "as published; see the author's report",
+   "held_out_H1": null,
+   "published_slips_per_wrap": null,
+   "published_slips_ci95": null,
+   "format": "npz grids (one wNNN key per winding)",
+   "source": {
+    "kind": "curl",
+    "url": "https://github.com/Jashann/vesuvius-scrolling/releases/download/v1.1/grids_PHerc0826_C1.npz"
+   },
+   "local": "data/spiralfits/jashann_v1.1/grids_PHerc0826_C1.npz",
+   "score_args": [],
+   "note": "no public winding references for this scroll: H5 only"
+  },
+  {
+   "id": "gaona-pherc0211",
+   "author": "Armando Gaona",
+   "author_url": "https://github.com/armando-gaona/pherc0211-first-letters-free-compute",
+   "release": "repository at commit 7b63279f6fcd5ce7f2f0db509abeb9ba81b211ed",
+   "scroll": "PHerc. 0211",
+   "frame": "spiral-input level-2 voxels",
+   "fitter": "organisers' fit_spiral.py; tracks + umbilicus only",
+   "run": "w010-w129",
+   "band_z": [
+    8000,
+    9000
+   ],
+   "fit_inputs": "tracks and umbilicus only; no human annotations",
+   "held_out_H1": null,
+   "published_slips_per_wrap": null,
+   "published_slips_ci95": null,
+   "format": "tifxyz meshes (wNNN/)",
+   "source": {
+    "kind": "git",
+    "url": "https://github.com/armando-gaona/pherc0211-first-letters-free-compute.git",
+    "commit": "7b63279f6fcd5ce7f2f0db509abeb9ba81b211ed",
+    "sparse": "meshes"
+   },
+   "local": "data/spiralfits/pherc0211_gaona/meshes",
+   "score_args": [],
+   "note": "no public winding references for this scroll: H5 only"
+  },
+  {
+   "id": "gaona-pherc0211-spliced",
+   "author": "Armando Gaona",
+   "author_url": "https://github.com/armando-gaona/pherc0211-first-letters-free-compute",
+   "release": "repository at commit 7b63279f6fcd5ce7f2f0db509abeb9ba81b211ed",
+   "scroll": "PHerc. 0211",
+   "frame": "spiral-input level-2 voxels",
+   "fitter": "organisers' fit_spiral.py; tracks + umbilicus only",
+   "run": "w010-w129 spliced",
+   "band_z": [
+    8000,
+    9000
+   ],
+   "fit_inputs": "tracks and umbilicus only; no human annotations",
+   "held_out_H1": null,
+   "published_slips_per_wrap": null,
+   "published_slips_ci95": null,
+   "format": "tifxyz meshes (wNNN/_spliced)",
+   "source": {
+    "kind": "git",
+    "url": "https://github.com/armando-gaona/pherc0211-first-letters-free-compute.git",
+    "commit": "7b63279f6fcd5ce7f2f0db509abeb9ba81b211ed",
+    "sparse": "meshes"
+   },
+   "local": "data/spiralfits/pherc0211_gaona/meshes",
+   "score_args": [
+    "--spliced"
+   ],
+   "note": "no public winding references for this scroll: H5 only"
+  }
+ ]
+}

@@ -1,0 +1,177 @@
+{
+ "_note": "H5 output of the sheet-gap search that commit 3d32d3f (H5 gap-search fix) replaced; not reproducible from this tree, kept for the record only.",
+ "paris4": {
+  "A2": {
+   "n": 200000,
+   "no_neighbour": 0.22345499999999996,
+   "duplicate": 0.032315,
+   "dup_threshold": 2.0,
+   "median": 9.83844015289651,
+   "p10": 4.648903271314339
+  },
+  "A2_seed2": {
+   "n": 200000,
+   "no_neighbour": 0.22438499999999995,
+   "duplicate": 0.032035,
+   "dup_threshold": 2.0,
+   "median": 9.837619312456809,
+   "p10": 4.671631275003165
+  },
+  "B3w10": {
+   "n": 200000,
+   "no_neighbour": 0.20647499999999996,
+   "duplicate": 0.02336,
+   "dup_threshold": 2.0,
+   "median": 10.335780274319404,
+   "p10": 5.516582634003135
+  },
+  "B3w10_seed2": {
+   "n": 200000,
+   "no_neighbour": 0.20411500000000005,
+   "duplicate": 0.022215,
+   "dup_threshold": 2.0,
+   "median": 10.361604409074062,
+   "p10": 5.557631075638346
+  },
+  "A": {
+   "n": 200000,
+   "no_neighbour": 0.263645,
+   "duplicate": 0.01406,
+   "dup_threshold": 2.0,
+   "median": 10.809003638343711,
+   "p10": 6.335771687005035
+  },
+  "B": {
+   "n": 200000,
+   "no_neighbour": 0.21677999999999997,
+   "duplicate": 0.010525,
+   "dup_threshold": 2.0,
+   "median": 10.916954066804465,
+   "p10": 6.871656092591001
+  },
+  "C": {
+   "n": 200000,
+   "no_neighbour": 0.22236500000000003,
+   "duplicate": 0.01102,
+   "dup_threshold": 2.0,
+   "median": 10.629516458662692,
+   "p10": 6.873423817093135
+  },
+  "B2": {
+   "n": 200000,
+   "no_neighbour": 0.21757499999999996,
+   "duplicate": 0.028075,
+   "dup_threshold": 2.0,
+   "median": 10.098421150789363,
+   "p10": 5.02585812972975
+  },
+  "B3w40": {
+   "n": 200000,
+   "no_neighbour": 0.20233500000000004,
+   "duplicate": 0.02146,
+   "dup_threshold": 2.0,
+   "median": 10.58330042988382,
+   "p10": 5.90215141850058
+  },
+  "B4w4": {
+   "n": 200000,
+   "no_neighbour": 0.21211999999999998,
+   "duplicate": 0.027,
+   "dup_threshold": 2.0,
+   "median": 10.193248097219112,
+   "p10": 5.185358816014514
+  },
+  "B4w20": {
+   "n": 200000,
+   "no_neighbour": 0.20140000000000002,
+   "duplicate": 0.02152,
+   "dup_threshold": 2.0,
+   "median": 10.48130346723201,
+   "p10": 5.76921826819962
+  },
+  "A2_z11000": {
+   "n": 200000,
+   "no_neighbour": 0.2864,
+   "duplicate": 0.011255,
+   "dup_threshold": 2.0,
+   "median": 9.802374627899553,
+   "p10": 5.129746929867543
+  },
+  "B3w10_z11000": {
+   "n": 200000,
+   "no_neighbour": 0.25582499999999997,
+   "duplicate": 0.00437,
+   "dup_threshold": 2.0,
+   "median": 10.479934202419827,
+   "p10": 6.259147378087073
+  }
+ },
+ "pherc0826": {
+  "A0": {
+   "n": 200000,
+   "no_neighbour": 0.17128500000000002,
+   "duplicate": 0.08577,
+   "dup_threshold": 2.0,
+   "median": 7.002473254862707,
+   "p10": 1.9372158490290532
+  },
+  "B0": {
+   "n": 200000,
+   "no_neighbour": 0.18067,
+   "duplicate": 0.079765,
+   "dup_threshold": 2.0,
+   "median": 7.253181969397701,
+   "p10": 2.0546922547291615
+  },
+  "B1w10": {
+   "n": 200000,
+   "no_neighbour": 0.19099,
+   "duplicate": 0.074555,
+   "dup_threshold": 2.0,
+   "median": 7.394640902096398,
+   "p10": 2.157304941557959
+  },
+  "B1w20": {
+   "n": 200000,
+   "no_neighbour": 0.1884,
+   "duplicate": 0.068945,
+   "dup_threshold": 2.0,
+   "median": 7.5324333010212285,
+   "p10": 2.302637434080316
+  },
+  "C0": {
+   "n": 200000,
+   "no_neighbour": 0.16669,
+   "duplicate": 0.085565,
+   "dup_threshold": 2.0,
+   "median": 6.957042461578567,
+   "p10": 1.945633188422653
+  },
+  "C1": {
+   "n": 200000,
+   "no_neighbour": 0.19067500000000004,
+   "duplicate": 0.069455,
+   "dup_threshold": 2.0,
+   "median": 7.524045425767326,
+   "p10": 2.279503678165202
+  }
+ },
+ "pherc0211": {
+  "gaona": {
+   "n": 200000,
+   "no_neighbour": 0.14364,
+   "duplicate": 0.064945,
+   "dup_threshold": 2.0,
+   "median": 6.210970806011574,
+   "p10": 2.3045073017368853
+  },
+  "gaona_spliced": {
+   "n": 200000,
+   "no_neighbour": 0.14364,
+   "duplicate": 0.064945,
+   "dup_threshold": 2.0,
+   "median": 6.210970806011574,
+   "p10": 2.3045073017368853
+  }
+ }
+}
