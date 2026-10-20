@@ -2772,10 +2772,17 @@
    "pass": true
   },
   "I4": {
-   "switches": 452,
+   "switches": 322,
    "human_wraps": 443.0,
-   "ratio": 1.020316027088036,
-   "pass": true
+   "ratio": 0.7268623024830699,
+   "pass": false,
+   "first_run": {
+    "switches": 452,
+    "human_wraps": 443.0,
+    "ratio": 1.020316027088036,
+    "pass": true
+   },
+   "note": "Corrected after the run: the first run counted switches with a different counter setting than H2 uses. With H2's own counter (results_ladders_floors.json paris4.C.I4.h2_counter) the ratio is 0.73, outside 0.8-1.2, so I4 fails. See README.md, 'What I got wrong'. paris4.C.I4 above keeps the first run's count."
   },
   "I5": {
    "on_fit": 0.9613140271907124,

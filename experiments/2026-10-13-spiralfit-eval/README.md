@@ -8,7 +8,8 @@ which cannot see a duplicated winding and says nothing about winding identity.
 The metrics (H1–H5) and the prior work they come from are described in
 [`tools/spiralfiteval/README.md`](../../tools/spiralfiteval/README.md). I fixed the metrics and
 the thresholds before scoring any fit, and wrote down predictions so I could check them
-afterwards.
+afterwards. I did that in my private working repository on 2026-10-13; this public repository
+starts after the runs, so you cannot check that date here.
 
 ## Data (all public)
 
@@ -32,7 +33,11 @@ With the quickstart's venv active:
     python experiments/2026-10-13-spiralfit-eval/plots.py                # figures from results.json
 
 `run_ladders_floors.py` also downloads Jashann's own scorer at a pinned commit and runs it on his
-grids; I ran that step in villa's `vesuvius` environment. Numbers: `results.json` and `results_ladders_floors.json`. Figures: `fig_*.png`. One CPU job,
+grids, with the same Python that runs the script. His scorer imports NumPy, SciPy and his `pcu.data`
+module; the script writes a small stand-in for `pcu.data` that serves the downloaded ladder files.
+I ran this script with the Python of a virtual environment for villa's `vesuvius` package
+(<https://github.com/ScrollPrize/villa>, `vesuvius/`) that also had this repository's three
+packages installed; I have not run it in the quickstart venv alone. Numbers: `results.json` and `results_ladders_floors.json`. Figures: `fig_*.png`. One CPU job,
 about 7 GB peak; the whole first run took 15 minutes for 21 fit folders.
 
 ## Result
@@ -96,7 +101,8 @@ What this means:
   that H2 and H1 would agree (Spearman −0.68); that the human windings' benefit would fade with
   distance from the clicks; that every fit would have under 1 % duplicates (1 of 21 did); that H1
   would beat its floor on all 13 Paris 4 fits (10 of 13 did); that Paris 4 fits would have
-  0.9–1.1 fit windings per labelled wrap (A2, A2_seed2 and B2 had 1.10–1.15); and that the eval
+  0.9–1.1 fit windings per labelled wrap (four did not: A2 1.14, A2_seed2 1.15, and the two
+  z 11000 fits A2_z11000 1.28 and B3w10_z11000 1.15); and that the eval
   fibers sit 4–6 vx off the clicked sheet near the clicks (the best shift was +1 vx, on only 54
   points). Right: H2 and H3 at floor on all 13 fits, where the duplicates sit, and the per-winding
   mean against the area-weighted share.

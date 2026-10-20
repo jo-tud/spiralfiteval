@@ -7,7 +7,9 @@ on the **21 odd human chains only** (`--chains odd`), while every main-table row
 band chains. Do not rank them against the main table. The odd half is held out because
 windingcheck's shipped model was fitted on the even chains; none of these four fits takes a
 human annotation as input. The odd half is not untouched, though: I had looked at odd-chain
-scores when I chose this setting to test and set the thresholds below.
+scores when I chose this setting to test and set the thresholds below. Each row is one fit with
+one seed, the bootstrap CIs are over chains only, and the result has not been re-tested on a
+fresh band.
 
 | row | config | one change from |
 |---|---|---|

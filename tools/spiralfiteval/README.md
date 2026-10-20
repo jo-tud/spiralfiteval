@@ -20,7 +20,7 @@ Needs Python 3.12 or newer with `venv` (tested on 3.12, Debian 13, x86_64), `git
 CPU only, no CT read, about 310 MB of downloads. The tested versions are pinned in
 `tools/spiralfiteval/constraints.txt`.
 
-    git clone <this repository> && cd <repository>
+    git clone https://github.com/jo-tud/spiralfiteval && cd spiralfiteval
     python3 -m venv .venv && . .venv/bin/activate
     pip install -e tools/windingcheck -e tools/windbench -e "tools/spiralfiteval[plot]" \
       -c tools/spiralfiteval/constraints.txt
@@ -140,8 +140,10 @@ reuses `tools/windingcheck`'s human chain reader and pair metrics.
 - **Leaderboard.** 21 rows (20 fits, two authors) scored with one command each:
   [`leaderboard/TABLE.md`](leaderboard/TABLE.md). The best held-out Paris 4 fit is Jashann's
   B3w10_seed2 at 9.8 % slips per wrap; fit C, which was given the human windings, scores 2.5 %.
-  H1 beats its floor on all 13 Paris 4 rows; H2 is at floor on 10 of 13 and H3 on 9 of 13
-  (leaderboard rule: a metric is at floor when it is less than two floor SDs better).
+  H1 beats its floor on all 13 Paris 4 rows under the leaderboard rule (a metric is at floor
+  when it is less than two floor SDs better), but on only 10 of 13 under the stricter rule I had
+  set before the runs, and the H1 shift curve is lowest at shift 0 for only 2 of 13 fits (A2,
+  B3w10_seed2). H2 is at floor on 10 of 13 and H3 on 9 of 13 (leaderboard rule).
 - **H1 reproduces Jashann's numbers.** On his own held-out ladders, with his counting rule, this
   tool lands within 1.5 points of his published slips per wrap on all 13 Paris 4 runs, and within
   +0.2 to +0.8 points on all 6 PHerc. 0826 runs. On the human chains it lands inside his 95 % CI
@@ -150,12 +152,14 @@ reuses `tools/windingcheck`'s human chain reader and pair metrics.
   have 6.5–8.6 % of their surface on a duplicated winding, 2–8× the Paris 4 runs. On Paris 4
   (z 8400–9400) 91–99 % of the duplicates sit in the outermost windings (w110–129); on PHerc. 0826
   they sit throughout, worst in the core.
-- **One fitter setting, scored on held-out chains** ([`leaderboard/fit-spacing/`](leaderboard/fit-spacing/README.md)).
+- **One fitter setting, scored on the odd human chains** ([`leaderboard/fit-spacing/`](leaderboard/fit-spacing/README.md)).
   With patch inputs, turning `fit_spiral.py`'s dense-spacing loss on (`dense_spacing_mode =
   "grad_mag"`) cut slips per wrap from 20.6 % to 7.7 % on the same 155 pairs (+12.9 points for
-  spacing off, 95 % CI +7.1 to +19.9). With Jashann's track inputs the same change showed no
-  effect (−2.7 points, CI −11.4 to +3.7), so that part of the test failed and the finding holds
-  for patch inputs only.
+  spacing off, 95 % CI +7.1 to +19.9; the CI is over chains only). Read it with four limits: one
+  band (z 8400–9400); 21 odd chains that I had seen scores on when I chose this setting, so they
+  are not fully held out; one fit (one seed) per setting; not re-tested on a fresh band. With
+  Jashann's track inputs the same change showed no effect (−2.7 points, CI −11.4 to +3.7), so
+  that part of the test failed and the finding holds for patch inputs only.
 
 ## Prior work
 
@@ -185,14 +189,14 @@ I did not invent these metrics. Credit, with dates of first public release:
 
   villa PR #1842 (2026-09-23) documents that the fitting objective does not catch duplicated
   coverage; villa PR #2048 (open) that the default of 130 windings exports surplus windings
-  outside the papyrus, which is where almost all Paris 4 duplicates sit (w110–129). The same
-  default makes PHerc. 0826 exports carry 121 windings where #2048 puts the scroll at about 90,
-  so part of the 6.9–8.6 % H5 share on Jashann's 0826 runs may come from it. Added here: H5 on
-  Jashann's 19 published runs.
+  outside the papyrus, which is where almost all Paris 4 duplicates sit (w110–129, z 8400–9400). The same
+  default makes the scored PHerc. 0826 exports carry 120 windings (w010–w129) where #2048 puts
+  the scroll at about 90, so part of the 6.9–8.6 % H5 share on Jashann's 0826 runs may come
+  from it. Added here: H5 on Jashann's 19 published runs.
 - **H2–H4 eval-fiber metrics** use the organisers' eval fibers as published. Jashann's report
   already notes that unrefined fits "sit 2 to 8 voxels off the sheet". That explains why H2 and H3
-  sit close to their random-point floor on these fits (fit C: eval fibers 2.95 voxels median,
-  uniformly random points 3.6). Added here: the finding that H2 on the eval fibers does not rank
+  sit close to their random-point floor on these fits (fit C: eval fibers 2.93 voxels median,
+  uniformly random points 3.38; `results_ladders_floors.json`, `paris4.C.floors.H3.random`). Added here: the finding that H2 on the eval fibers does not rank
   unrefined fits (above).
 - **Formats**: villa `fit_spiral.py` tifxyz output (`wNNN/`), Jashann's `.npz` grids.
 
@@ -208,9 +212,12 @@ I did not invent these metrics. Credit, with dates of first public release:
   leaderboard's two-SD rule is looser and still flags most of them. Whether the eval fibers work
   as a metric on a refined fit that sits on the sheet is open.
 - **Most of my predictions were wrong.** I wrote down 10 predictions before the runs and kept
-  them as written; 7 were wrong (listed in the experiment README).
+  them as written; 7 were wrong (listed in the experiment README). They were written in my
+  private working repository; this public repository starts after the runs, so the date cannot
+  be checked here.
 - **Whether duplicated windings cause local winding slips could not be measured** on Paris 4:
-  only 7 human click pairs touch a duplicate, and I had set 50 as the minimum. The human clicks
+  only 7 human click pairs touch a duplicate (from a run of `src/spiralfiteval/local.py` whose
+  output is not in this repository), and I had set 50 as the minimum. The human clicks
   cover the inner windings, the duplicates sit in the outer ones (w110–129).
 - **H1–H4 run on one scroll.** Paris 4 is the only scroll with public human winding chains, eval
   fibers and published fits. H5 runs on any scroll.

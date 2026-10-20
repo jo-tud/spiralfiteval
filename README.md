@@ -17,10 +17,13 @@ your own: [`tools/spiralfiteval/leaderboard/`](tools/spiralfiteval/leaderboard/R
   95 % CI on all 9 runs he reports, and within 1.5 points on all 13 Paris 4 runs on his own
   held-out ladders.
 - Every published fit on PHerc. 0826 and 0211 has 6.5–8.6 % of its surface on a duplicated
-  winding, 2–8× the Paris 4 fits. On Paris 4 almost all duplicates sit in the surplus outer
-  windings.
+  winding, 2–8× the Paris 4 fits. On Paris 4 (z 8400–9400) almost all duplicates sit in the
+  surplus outer windings.
 - With patch inputs, turning on `fit_spiral.py`'s dense-spacing loss cut slips per wrap from
-  20.6 % to 7.7 % on held-out human chains. With track inputs the same change showed no effect.
+  20.6 % to 7.7 % on 21 odd human chains of one band (z 8400–9400), one fit per setting. I had
+  seen scores on those chains when I chose the setting, so they are not fully held out, and the
+  result has not been re-tested on a fresh band. With track inputs the same change showed no
+  effect.
 
 ## What does not work yet
 
@@ -46,6 +49,10 @@ EduceLab under CC BY-NC 4.0 and are not redistributed here. Cite the scans as:
 > S. Parsons, C. S. Parker, C. Chapman, M. Hayashida, W. B. Seales,
 > *EduceLab-Scrolls: Verifiable Recovery of Text from Herculaneum Papyri using
 > X-ray CT*, arXiv:2304.02084, 2023.
+
+> G. Angelotti, S. Parsons, S. Johnson, E. R. Dal Prà, J. Rudolph, P. Tafforeau, A. Mirone,
+> P. Henderson, H. Schilling, F. McDonald, D. Josey, Y. Nader, C. S. Parker, W. B. Seales,
+> *Vesuvius Challenge – CT Scans of Herculaneum Papyri*, Vesuvius Challenge, 2026.
 
 See <https://scrollprize.org/data> for the data agreement and `tools/spiralfiteval/DATA_NOTICE.md`
 for the full citations. PHerc. Paris 4 material is under a publication reservation and no CT or

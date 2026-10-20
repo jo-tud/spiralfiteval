@@ -1,7 +1,7 @@
 """H1 on Jashann's ladder sets next to his per-ladder results, H5 per winding, windings per
 labelled wrap (villa #2048 check), and every reference metric against its floor. See README.md.
 
-    PY=external/villa/vesuvius/.venv/bin/python
+    PY=python   # any Python with numpy, scipy and this repository's three packages; see README.md
     $PY experiments/2026-10-13-spiralfit-eval/run_ladders_floors.py [--fits C,A2] [--seeds 5] [--no-others]
 
 Inputs as run.py, plus four small files from Jashann/vesuvius-scrolling at a pinned commit: his

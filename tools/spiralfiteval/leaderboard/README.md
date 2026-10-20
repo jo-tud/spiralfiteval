@@ -97,6 +97,12 @@ uncommitted row files even when the code is unchanged, so it is a hint, not proo
 fresh-container re-run above is the independent check: it clones one commit and re-scores the
 committed inputs.
 
+The commit ids in the rows (`bfb8665` and others) are from my private working history, before
+this public repository was created from it as one commit; they do not resolve here. The scoring
+code changed after `bfb8665` (coverage fields, chain parity, names), but not in a way that moves
+a score as far as I can tell: the quickstart re-scores Jashann's A2 in this repository to the
+row's numbers exactly. I have not re-scored every row with the public code.
+
 ## Licence and data
 
 Code MIT (`../LICENSE`). The fits belong to their authors and are linked, never copied into this
