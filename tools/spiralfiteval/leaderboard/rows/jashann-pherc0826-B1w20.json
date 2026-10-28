@@ -28,15 +28,15 @@
   "bytes": 19586848
  },
  "tool": {
-  "commit": "bfb8665e12eef2d3c9385efffc3cc0ccc652b8c7",
-  "dirty": true
+  "commit": "0f790d7e8cc0f088a5e520f96974b12fad19a6fd",
+  "dirty": false
  },
  "python": "3.12.13",
- "scored_utc": "2026-10-14T14:55:50Z",
+ "scored_utc": "2026-10-23T22:06:03Z",
  "cost": {
-  "seconds": 101.3,
-  "peak_rss_gb": 5.55,
-  "wall_seconds_with_startup": 101.4
+  "seconds": 59.5,
+  "peak_rss_gb": 5.54,
+  "wall_seconds_with_startup": 59.6
  },
  "headline": {
   "vertices": 67447036,
@@ -52,9 +52,9 @@
   "H5_area_weighted": 0.06811361309487345
  },
  "floors": {},
- "console": "grids_PHerc0826_B1w20: 67,447,036 vertices, windings w010-w129, grid step 4.5 vx, 66.9 s\n  H5 sheet spacing: median gap 8.9 vx, duplicate (< 2.0 vx) 6.90%, no neighbour within 60 vx 0.17%\n     per winding: mean 12.92% (area-weighted 6.81%); most duplicated w011 81%, w012 79%, w010 78%",
+ "console": "grids_PHerc0826_B1w20.npz: 67,447,036 vertices, windings w010-w129, grid step 4.5 vx, 40.4 s\n  H5 sheet spacing: median gap 8.9 vx, duplicate (< 2.0 vx) 6.90%, no neighbour within 60 vx 0.17%\n     per winding: mean 12.92% (area-weighted 6.81%); most duplicated w011 81%, w012 79%, w010 78%",
  "score": {
-  "fit": "grids_PHerc0826_B1w20",
+  "fit": "grids_PHerc0826_B1w20.npz",
   "vertices": 67447036,
   "windings": [
    10,
@@ -935,7 +935,7 @@
     "share_of_duplicates": 0.0
    }
   },
-  "seconds": 66.9,
+  "seconds": 40.4,
   "seams": {
    "last_w_to_first_w+1": 15.938488960266113,
    "first_w_to_last_w+1": 40.26658248901367,

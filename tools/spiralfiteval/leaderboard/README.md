@@ -10,13 +10,16 @@ one command to score your own fit and add a row.
 
 This is not a ranking of people or of fitters. The fits were made for different purposes with
 different inputs, and most of them are unrefined runs of the organisers' `fit_spiral.py`.
-H2 is at floor on 10 of 13 reference rows and H3 on 9 of 13; H1 beats its floor on all 13.
+H2 is at floor on 10 of 13 reference rows and H3 on 10 of 13; H1 beats its floor on all 13.
+16 of the 26 H2 and H3 floor flags have a margin within 2 floor SDs of the line, so a sub-voxel
+shift of the eval fibers can flip them.
 Read the floor column before reading a number. The metrics and annotations come from others;
 credit and dates are in [../README.md § Prior work](../README.md#prior-work).
 
 I re-scored all 21 rows from a fresh clone in a stock `python:3.12-slim` container: every
 headline number came out identical, and the largest peak memory was 6.62 GB
-(`jashann-pherc0826-A0`).
+(`jashann-pherc0826-A0`). On 2026-10-23 all 21 rows were scored again at one commit after the
+eval-fiber frame fix ([../README.md](../README.md#results)); only the H2, H3 and H4 numbers and their floors changed.
 
 ## Add your fit (one command)
 

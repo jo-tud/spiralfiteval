@@ -28,15 +28,15 @@
   "bytes": 61014252
  },
  "tool": {
-  "commit": "7fb97c51cf147a56a047225452d9aa0667ed54ca",
-  "dirty": true
+  "commit": "0f790d7e8cc0f088a5e520f96974b12fad19a6fd",
+  "dirty": false
  },
  "python": "3.12.13",
- "scored_utc": "2026-10-14T12:38:23Z",
+ "scored_utc": "2026-10-23T22:08:46Z",
  "cost": {
-  "seconds": 112.2,
-  "peak_rss_gb": 4.82,
-  "wall_seconds_with_startup": 112.4
+  "seconds": 48.1,
+  "peak_rss_gb": 5.51,
+  "wall_seconds_with_startup": 48.2
  },
  "headline": {
   "vertices": 51811094,
@@ -52,7 +52,7 @@
   "H5_area_weighted": 0.0654758994569773
  },
  "floors": {},
- "console": "meshes: 51,811,094 vertices, windings w010-w129, grid step 4.7 vx, 75.6 s\n  H5 sheet spacing: median gap 7.1 vx, duplicate (< 2.0 vx) 6.49%, no neighbour within 60 vx 0.46%\n     per winding: mean 7.88% (area-weighted 6.55%); most duplicated w071 38%, w072 36%, w070 35%",
+ "console": "meshes: 51,811,094 vertices, windings w010-w129, grid step 4.7 vx, 33.6 s\n  H5 sheet spacing: median gap 7.1 vx, duplicate (< 2.0 vx) 6.49%, no neighbour within 60 vx 0.46%\n     per winding: mean 7.88% (area-weighted 6.55%); most duplicated w071 38%, w072 36%, w070 35%",
  "score": {
   "fit": "meshes",
   "vertices": 51811094,
@@ -935,7 +935,7 @@
     "share_of_duplicates": 0.0
    }
   },
-  "seconds": 75.6,
+  "seconds": 33.6,
   "seams": {
    "last_w_to_first_w+1": 10.449737548828125,
    "first_w_to_last_w+1": 25.005247116088867,

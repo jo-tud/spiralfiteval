@@ -19,11 +19,12 @@ your own: [`tools/spiralfiteval/leaderboard/`](tools/spiralfiteval/leaderboard/R
 - Every published fit on PHerc. 0826 and 0211 has 6.5–8.6 % of its surface on a duplicated
   winding, 2–8× the Paris 4 fits. On Paris 4 (z 8400–9400) almost all duplicates sit in the
   surplus outer windings.
-- With patch inputs, turning on `fit_spiral.py`'s dense-spacing loss cut slips per wrap from
-  20.6 % to 7.7 % on 21 odd human chains of one band (z 8400–9400), one fit per setting. I had
-  seen scores on those chains when I chose the setting, so they are not fully held out, and the
-  result has not been re-tested on a fresh band. With track inputs the same change showed no
-  effect.
+- At villa's default length (30,000 steps) I could not show a gain from `fit_spiral.py`'s
+  dense-spacing loss on patch inputs: 8.8 % vs 6.9 % slips per wrap, +1.9 points (three seeds
+  per setting; 95 % CI −1.3 to +5.1, seed noise included), on the odd human chains of one band
+  (z 8400–9400). The 12.9-point gap I reported before (20.6 % vs 7.7 %) is a 12,000-step result.
+  I had seen scores on those chains when I chose the setting, so they are not fully held out.
+  With track inputs the same change showed no effect.
 
 ## What does not work yet
 

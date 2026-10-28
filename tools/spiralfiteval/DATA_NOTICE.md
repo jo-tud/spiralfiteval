@@ -3,8 +3,9 @@
 The MIT licence covers the code in this directory only. It does not cover any scroll data,
 annotations or fits.
 
-`spiralfiteval` ships **no scroll data**. It reads no CT intensities at all: it scores fit meshes
-against point annotations. `spiralfiteval fetch` downloads public files at run time from the
+`spiralfiteval` ships **no scroll data**, apart from one documentation figure with crops of one
+CT slice (see [What the outputs contain](#what-the-outputs-contain)). It reads no CT intensities
+at all: it scores fit meshes against point annotations. `spiralfiteval fetch` downloads public files at run time from the
 Vesuvius Challenge data server (`https://dl.ash2txt.org/datasets/spiral_datasets/PHercParis4/`):
 
 - `relative_windings.json`, `same_windings.json`, `abs_winding.json` (the `spiral-input`
@@ -64,3 +65,10 @@ Every output of `spiralfiteval` is geometry only: spiral times, normal distances
 and confidence intervals in a JSON file. It renders no images of the scan and contains no ink,
 letters or text. The experiment figures (`experiments/2026-10-13-spiralfit-eval/fig_*.png`)
 are score plots, or annotation and fit positions drawn as coloured points on a blank background.
+
+One documentation figure is different: `docs/dup_winding_0211.png` (shown in `README.md`) is drawn
+on the raw CT. It shows one horizontal slice (z = 8500) of the public PHerc. 0211 scan
+`20250821151803` (9.362 µm), as a downsampled overview and two crops of about 1.5 mm, with Armando
+Gaona's published fit drawn on top. It is derived from Vesuvius Challenge data and falls under the
+same terms (CC BY-NC 4.0: attribution, non-commercial use only). It is a cross-section of the
+rolled scroll, not a flattened surface, and shows no ink, letters or text.

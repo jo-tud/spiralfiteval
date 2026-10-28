@@ -1,0 +1,101 @@
+{
+ "unit": "human chain",
+ "unit_key": "chain",
+ "n_boot": 10000,
+ "seed": 0,
+ "tol_n": 10.0,
+ "chains": 21,
+ "common_adjacent_tests": 211,
+ "own": {
+  "A2on30": {
+   "slips_per_wrap": 0.2545454545454545,
+   "slips_ci95": [
+    0.22651874675355338,
+    0.29545454545454547
+   ],
+   "adjacent_tests": 220,
+   "clicks_on_fit": 0.946360153256705
+  },
+  "A2off30": {
+   "slips_per_wrap": 0.26222222222222225,
+   "slips_ci95": [
+    0.21338912133891214,
+    0.32291828416149065
+   ],
+   "adjacent_tests": 225,
+   "clicks_on_fit": 0.9616858237547893
+  }
+ },
+ "common": {
+  "A2on30": {
+   "slips_per_wrap": 0.25118483412322273
+  },
+  "A2off30": {
+   "slips_per_wrap": 0.2796208530805687
+  }
+ },
+ "differences": {
+  "A2off30-A2on30": {
+   "point": 0.028436018957345988,
+   "ci95": [
+    -0.004951110782720067,
+    0.06369504808292742
+   ],
+   "share_below_zero": 0.0286,
+   "excludes_zero": false
+  }
+ },
+ "by_unit": {
+  "chain": {
+   "unit": "chain",
+   "groups": 21,
+   "common": {
+    "A2on30": {
+     "slips_per_wrap": 0.25118483412322273
+    },
+    "A2off30": {
+     "slips_per_wrap": 0.2796208530805687
+    }
+   },
+   "differences": {
+    "A2off30-A2on30": {
+     "point": 0.028436018957345988,
+     "ci95": [
+      -0.004951110782720067,
+      0.06369504808292742
+     ],
+     "share_below_zero": 0.0286,
+     "excludes_zero": false
+    }
+   }
+  },
+  "winding": {
+   "unit": "winding",
+   "groups": 35,
+   "common": {
+    "A2on30": {
+     "slips_per_wrap": 0.25118483412322273
+    },
+    "A2off30": {
+     "slips_per_wrap": 0.2796208530805687
+    }
+   },
+   "differences": {
+    "A2off30-A2on30": {
+     "point": 0.028436018957345988,
+     "ci95": [
+      -0.04736904464953852,
+      0.10382691079412391
+     ],
+     "share_below_zero": 0.2118,
+     "excludes_zero": false
+    }
+   }
+  }
+ },
+ "chain_parity": "odd",
+ "z": [
+  8400.0,
+  9400.0
+ ]
+}

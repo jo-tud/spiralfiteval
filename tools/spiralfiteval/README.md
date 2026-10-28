@@ -31,8 +31,9 @@ CPU only, no CT read, about 310 MB of downloads. The tested versions are pinned 
 
 `spiralfiteval score FIT` without `--references` scores H5 alone: it needs no annotations and
 works on any scroll. Downloads land in `data/spiral_datasets/` inside the clone
-(`WINDINGCHECK_DATA` moves them). Tests: `pip install -e "tools/spiralfiteval[tests]" -c
-tools/spiralfiteval/constraints.txt && pytest tools/spiralfiteval` (28 tests, all on synthetic
+(`WINDINGCHECK_DATA` moves them). Tests, from the root of the clone: `pip install -e
+tools/windingcheck -e tools/windbench -e "tools/spiralfiteval[tests]" -c
+tools/spiralfiteval/constraints.txt && pytest tools/spiralfiteval` (34 tests, all on synthetic
 fits, about 15 s).
 
 ## What you should see
@@ -85,7 +86,7 @@ ink-pixel objective rewards rather than penalises (their own `spiral-fitting/aut
 villa PR #1842).
 
 **Do not rank unrefined fits by H2.** On 11 Paris 4 runs of `fit_spiral.py` it spans only
-9.6–10.5 switches per 1,000 vx and does not follow H1 (Spearman −0.68, −0.58 without the fit
+9.5–10.5 switches per 1,000 vx and does not follow H1 (Spearman −0.68, −0.58 without the fit
 trained on the chains). Those fits sit a few voxels off the sheet between their inputs, about
 half a sheet spacing from many fiber points, so the nearest-sheet assignment flips whatever the
 winding. Use H1 for winding identity and H5 where there are no annotations, and read every
@@ -143,7 +144,10 @@ reuses `tools/windingcheck`'s human chain reader and pair metrics.
   H1 beats its floor on all 13 Paris 4 rows under the leaderboard rule (a metric is at floor
   when it is less than two floor SDs better), but on only 10 of 13 under the stricter rule I had
   set before the runs, and the H1 shift curve is lowest at shift 0 for only 2 of 13 fits (A2,
-  B3w10_seed2). H2 is at floor on 10 of 13 and H3 on 9 of 13 (leaderboard rule).
+  B3w10_seed2). H2 is at floor on 10 of 13 and H3 on 10 of 13 (leaderboard rule).
+  These H2 and H3 flags are not stable: 16 of the 26 H2 and H3 floor flags have a margin within
+  2 floor SDs of the two-SD line, and a sub-voxel shift of the eval fibers flips some of them
+  (the fiber-frame fix below flipped 3).
 - **H1 reproduces Jashann's numbers.** On his own held-out ladders, with his counting rule, this
   tool lands within 1.5 points of his published slips per wrap on all 13 Paris 4 runs, and within
   +0.2 to +0.8 points on all 6 PHerc. 0826 runs. On the human chains it lands inside his 95 % CI
@@ -152,14 +156,37 @@ reuses `tools/windingcheck`'s human chain reader and pair metrics.
   have 6.5–8.6 % of their surface on a duplicated winding, 2–8× the Paris 4 runs. On Paris 4
   (z 8400–9400) 91–99 % of the duplicates sit in the outermost windings (w110–129); on PHerc. 0826
   they sit throughout, worst in the core.
+  A point of a fit's surface is on a duplicated winding when another winding of the same fit,
+  at least half a turn away along the spiral, passes within 2 voxels of it (19 µm at 9.36 µm),
+  measured along that other winding's surface normal. The published share is the fraction of
+  200,000 randomly drawn mesh vertices (mesh refined to ≤ 5-voxel spacing) where this holds. It
+  counts any two windings this close, whether one sheet is traced twice or two windings touch or
+  cross.
+
+  ![A duplicated winding on PHerc. 0211: one horizontal CT slice with the fit drawn on top](docs/dup_winding_0211.png)
+
+  **A duplicated winding on PHerc. 0211.** One horizontal CT slice (z = 8500) through Armando
+  Gaona's published spiral fit, raw CT at 9.36 µm, the same grey scale in A and B. Blue: the fit
+  surface, one line per winding. Orange: points the duplicate check flags, where another winding
+  of the fit passes within 2 voxels (19 µm). **A:** winding 88 runs on top of windings 87 and 89
+  for 0.6 mm (gaps of 1.1 to 1.9 voxels), so one stretch of papyrus is counted for three
+  windings. **B (control):** the same winding on the opposite side of the scroll, with no flag in
+  the window. I chose A by a rule written down before I looked: among all flagged points in this
+  slice, sort by the length of the flagged stretch they belong to and take the stretch of the
+  median point, not the worst one. My first rule did not require the stretch to lie on scanned
+  papyrus, and it landed outside the scroll, where the fit's outer windings pack together in empty
+  space. In this slice 28 % of the flagged surface is outside the papyrus like that. On papyrus,
+  7.8 % of the fit surface is flagged, so the 6.5 % figure is not caused by the empty margin.
+  B was chosen by a rule too: the same winding, at the angle closest to the opposite side.
 - **One fitter setting, scored on the odd human chains** ([`leaderboard/fit-spacing/`](leaderboard/fit-spacing/README.md)).
-  With patch inputs, turning `fit_spiral.py`'s dense-spacing loss on (`dense_spacing_mode =
-  "grad_mag"`) cut slips per wrap from 20.6 % to 7.7 % on the same 155 pairs (+12.9 points for
-  spacing off, 95 % CI +7.1 to +19.9; the CI is over chains only). Read it with four limits: one
-  band (z 8400–9400); 21 odd chains that I had seen scores on when I chose this setting, so they
-  are not fully held out; one fit (one seed) per setting; not re-tested on a fresh band. With
-  Jashann's track inputs the same change showed no effect (−2.7 points, CI −11.4 to +3.7), so
-  that part of the test failed and the finding holds for patch inputs only.
+  At villa's default length (30,000 steps) I could not show a gain from `fit_spiral.py`'s
+  dense-spacing loss (`dense_spacing_mode = "grad_mag"`) on patch inputs: 8.8 % vs 6.9 % slips
+  per wrap, +1.9 points (three seeds per setting; 95 % CI −1.3 to +5.1, seed noise included).
+  The 12.9-point gap (20.6 % vs 7.7 %) is a 12,000-step result: from 12,000 to 30,000 steps the
+  spacing-off fit went from 18.6 % to 9.0 % on its own pairs, and the spacing-on fit stayed at
+  6–7 %. Two limits: one band (z 8400–9400), and 21 odd chains that I had seen scores on when I
+  chose this setting, so they are not fully held out. With Jashann's track inputs the same change
+  showed no effect at either length (one fit per setting).
 
 ## Prior work
 
@@ -193,7 +220,11 @@ I did not invent these metrics. Credit, with dates of first public release:
   default makes the scored PHerc. 0826 exports carry 120 windings (w010–w129) where #2048 puts
   the scroll at about 90, so part of the 6.9–8.6 % H5 share on Jashann's 0826 runs may come
   from it. Added here: H5 on Jashann's 19 published runs.
-- **H2–H4 eval-fiber metrics** use the organisers' eval fibers as published. Jashann's report
+- **H2–H4 eval-fiber metrics** use the organisers' eval fibers as published. The fibers were
+  traced on the L1 fiber prediction (`trace_to_base_scale: 2.0` in every file), so a fiber point p
+  in L0 coordinates maps to the L2 fit frame at voxel centres as (p − 1)/4. Up to 2026-10-23 this
+  tool used p/4, a quarter of an L2 voxel off; the fix moved no fit's H2 rate or H3 median by more
+  than 1.1 % and flipped 3 of the 26 H2 and H3 floor flags. Jashann's report
   already notes that unrefined fits "sit 2 to 8 voxels off the sheet". That explains why H2 and H3
   sit close to their random-point floor on these fits (fit C: eval fibers 2.93 voxels median,
   uniformly random points 3.38; `results_ladders_floors.json`, `paris4.C.floors.H3.random`). Added here: the finding that H2 on the eval fibers does not rank
@@ -208,8 +239,9 @@ I did not invent these metrics. Credit, with dates of first public release:
   crossings.
 - **The eval-fiber metrics say little about unrefined fits.** With the experiment's rule (H2 at
   least 20 % below its floor, H3 at least 0.5 vx below), H2 and H3 beat their floor on none of the
-  13 Paris 4 fits, and the H4 difference between fits C and A2 on none of its 6 distance bins. The
-  leaderboard's two-SD rule is looser and still flags most of them. Whether the eval fibers work
+  13 Paris 4 fits, and the H4 difference between fits C and A2 on none of the 5 of its 6 distance
+  bins that hold at least 1,000 points. The leaderboard's two-SD rule is looser and still flags
+  most of them. Whether the eval fibers work
   as a metric on a refined fit that sits on the sheet is open.
 - **Most of my predictions were wrong.** I wrote down 10 predictions before the runs and kept
   them as written; 7 were wrong (listed in the experiment README). They were written in my
